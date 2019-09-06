@@ -1,0 +1,63 @@
+<odoo>
+   <record id="view_tasks_report_pivot" model="ir.ui.view">
+       <field name="name">tasks.report.pivot</field>
+       <field name="model">tasks.report</field>
+       <field name="arch" type="xml">
+           <pivot string="Tasks Analysis" disable_linking="True">
+               <field name="assigned_to" type="col"/>
+               <field name="status" type="row"/>
+               <field name="task_count" type="measure"/>
+           </pivot>
+       </field>
+   </record>
+
+    <record id="view_tasks_report_graph" model="ir.ui.view">
+   <field name="name">tasks.report.graph</field>
+   <field name="model">tasks.report</field>
+   <field name="arch" type="xml">
+       <graph string="Tasks Analysis">
+           <field name="assigned_to" type="column"/>
+           <field name="status" type="column"/>
+           <field name="task_count" type="measure"/>
+       </graph>
+   </field>
+</record>
+
+
+
+
+    <act_window id="action_report_reports_menu"
+      name="Reports"
+      res_model="tasks.report"
+      view_mode="graph,pivot"
+       target="current"/>
+
+     <menuitem id="menu_report_employee_tasks"
+        parent="task_menu"
+        action="action_report_reports_menu"
+        sequence="20"/>
+
+
+
+    <act_window id="action_report_laste_tasks"
+      name="Employee Tasks Status"
+      res_model="tasks.report"
+      view_mode="graph,pivot"
+       target="current"/>
+
+
+     <menuitem id="menu_report_late_tasks_item"
+        parent="menu_report_employee_tasks"
+        action="action_report_laste_tasks"
+        sequence="25"/>
+
+
+
+
+
+
+
+
+
+
+</odoo>

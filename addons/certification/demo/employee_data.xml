@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+
+    <record id="employee_demo" model="hr.employee">
+        <field name="name">Veysel Gunduzalp123</field>
+    </record>
+
+    <record id ="certification_demo" model="employee.info">
+        <field name="name" eval="ref('employee_demo')"/>
+        <field name="identification_number">1234567123</field>
+        <field name="type">card_id</field>
+    </record>
+
+</odoo>

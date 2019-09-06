@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id ="entity_demo"  model="res.partner">
+        <field name="name">Entity Demo</field>
+        <field name="is_certification_body">True</field>
+    </record>
+    <record id ="supplier_demo"  model="res.partner">
+        <field name="name">Supplier Demo</field>
+        <field name="is_certification_body">False</field>
+    </record>
+    <record id ="standard_demo" model="certification.standard">
+        <field name="name">Standard Demo</field>
+    </record>
+
+    <record id ="certification_demo"  model="certification">
+        <field name="number">Demo Certification</field>
+        <field name="date">2019-12-31</field>
+        <field name="standard_id" eval="ref('standard_demo')"/>
+        <field name="entity_id" eval="ref('entity_demo')"/>
+        <field name="owner_id" eval="ref('supplier_demo')"/>
+    </record>
+</odoo>

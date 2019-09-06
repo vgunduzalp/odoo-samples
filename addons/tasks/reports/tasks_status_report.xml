@@ -1,0 +1,43 @@
+<odoo>
+   <record id="view_tasks_report_pivot12" model="ir.ui.view">
+       <field name="name">tasks.report.pivot1</field>
+       <field name="model">tasks.status.report</field>
+       <field name="arch" type="xml">
+           <pivot string="Tasks Analysis" disable_linking="True">
+               <field name="status" type="row"/>
+               <field name="task_count" type="measure"/>
+           </pivot>
+       </field>
+   </record>
+
+    <record id="view_tasks_report_graph12" model="ir.ui.view">
+   <field name="name">tasks.report.graph1</field>
+   <field name="model">tasks.status.report</field>
+   <field name="arch" type="xml">
+       <graph string="Tasks Analysis">
+           <field name="status" type="column"/>
+           <field name="task_count" type="measure"/>
+       </graph>
+   </field>
+</record>
+
+
+
+
+
+
+
+      <act_window id="action_report_tasks_status111"
+      name="Tasks Status"
+      res_model="tasks.status.report"
+      view_mode="graph,pivot"
+       target="current"/>
+
+
+     <menuitem id="menu_report_late_tasks_item2222"
+        parent="menu_report_employee_tasks"
+        action="action_report_tasks_status111"
+        sequence="27"/>
+
+
+</odoo>

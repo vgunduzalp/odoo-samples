@@ -1,0 +1,68 @@
+<odoo>
+   <record id="view_certification_report_pivot" model="ir.ui.view">
+       <field name="name">certification.report.pivot</field>
+       <field name="model">certification.report</field>
+       <field name="arch" type="xml">
+           <pivot string="Certification Analysis" disable_linking="True">
+               <field name="entity_id" type="col"/>
+               <field name="expiry_status" type="row"/>
+               <field name="standard_id" type="row"/>
+               <field name="certification_count" type="measure"/>
+           </pivot>
+       </field>
+   </record>
+
+    <record id="view_certification_report_graph" model="ir.ui.view">
+   <field name="name">certification.report.graph</field>
+   <field name="model">certification.report</field>
+   <field name="arch" type="xml">
+       <graph string="Certification Analysis">
+           <field name="entity_id" type="column"/>
+           <field name="standard_id" type="row"/>
+           <field name="expiry_status" type="column"/>
+           <field name="certification_count" type="measure"/>
+       </graph>
+   </field>
+</record>
+
+     <act_window id="action_report_certification"
+      name="Raporlar"
+      res_model="certification.report"
+      view_mode="graph,pivot"
+       target="current"/>
+
+   <menuitem id="menu_report_certification"
+        parent="certification_menu"
+        action="action_report_certification"
+        sequence="25"/>
+
+
+
+
+
+    <act_window id="action_report_certification2"
+      name="Deneme 2"
+      res_model="certification.report"
+      view_mode="graph,pivot"
+       target="current"/>
+
+      <act_window id="action_report_certification3"
+      name="Deneme 2"
+      res_model="certification.report"
+      view_mode="graph,pivot"
+       target="current"/>
+
+
+      <menuitem id="menu_report_certification1"
+        parent="certification_menu"
+        action="action_report_certification2"
+        sequence="40"/>
+
+
+    <menuitem id="menu_report_certification2"
+        parent="menu_report_certification1"
+        action="action_report_certification3"
+        sequence="25"/>
+
+
+</odoo>

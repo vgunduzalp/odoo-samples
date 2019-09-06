@@ -1,0 +1,239 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* tasks
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-06 06:48+0000\n"
+"PO-Revision-Date: 2019-09-05 23:56-0700\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: tr\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: tasks
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_search
+msgid "All"
+msgstr "Tümü"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__assigned_to
+#: model:ir.model.fields,field_description:tasks.field_tasks_report__assigned_to
+msgid "Assigned To"
+msgstr "Sahibi"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: tasks
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_form
+msgid "Date Info"
+msgstr "Tarih Bilgileri"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__deadline
+msgid "Deadline"
+msgstr "Son Bitiş Tarihi"
+
+#. module: tasks
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_kanban
+msgid "Deadline:"
+msgstr "Son Bitiş Tarihi"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__description
+msgid "Description"
+msgstr "Açıklama"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__display_name
+#: model:ir.model.fields,field_description:tasks.field_tasks_report__display_name
+#: model:ir.model.fields,field_description:tasks.field_tasks_status_report__display_name
+msgid "Display Name"
+msgstr "Görünüm Adı"
+
+#. module: tasks
+#: selection:tasks,status:0 selection:tasks.report,status:0
+#: selection:tasks.status.report,status:0
+msgid "Done"
+msgstr "Tamamlandı"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__isExpired
+msgid "Durum"
+msgstr "Durum"
+
+#. module: tasks
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_kanban
+msgid "Effort:"
+msgstr "Efor"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__effort
+msgid "Efort"
+msgstr "Efor"
+
+#. module: tasks
+#: model:ir.actions.act_window,name:tasks.action_report_laste_tasks
+#: model:ir.ui.menu,name:tasks.menu_report_late_tasks_item
+msgid "Employee Tasks Status"
+msgstr "Çalışan Task Durumları"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__end_date
+msgid "End Date"
+msgstr "Bitiş Tarihi"
+
+#. module: tasks
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_search
+msgid "Group By"
+msgstr "Grupla"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__id
+#: model:ir.model.fields,field_description:tasks.field_tasks_report__id
+#: model:ir.model.fields,field_description:tasks.field_tasks_status_report__id
+msgid "ID"
+msgstr ""
+
+#. module: tasks
+#: selection:tasks,status:0 selection:tasks.report,status:0
+#: selection:tasks.status.report,status:0
+msgid "In Progress"
+msgstr "Çalışılıyor"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks____last_update
+#: model:ir.model.fields,field_description:tasks.field_tasks_report____last_update
+#: model:ir.model.fields,field_description:tasks.field_tasks_status_report____last_update
+msgid "Last Modified on"
+msgstr "Son Güncelleme"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: tasks
+#: selection:tasks,status:0 selection:tasks.report,status:0
+#: selection:tasks.status.report,status:0
+msgid "Removed"
+msgstr "Silindi"
+
+#. module: tasks
+#: model:ir.actions.act_window,name:tasks.action_report_reports_menu
+#: model:ir.ui.menu,name:tasks.menu_report_employee_tasks
+msgid "Reports"
+msgstr "Raporlar"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__start_date
+msgid "Satrt Date"
+msgstr "Başlangıç Tarihi"
+
+#. module: tasks
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_kanban
+msgid "Start:"
+msgstr "Başlangıç"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__status
+#: model:ir.model.fields,field_description:tasks.field_tasks_report__status
+#: model:ir.model.fields,field_description:tasks.field_tasks_status_report__status
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_search
+msgid "Status"
+msgstr "Durumu"
+
+#. module: tasks
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_search
+msgid "Status Actions"
+msgstr ""
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks_report__task_count
+#: model:ir.model.fields,field_description:tasks.field_tasks_status_report__task_count
+msgid "Task Count"
+msgstr "Görev Sayısı"
+
+#. module: tasks
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_form
+msgid "Task Info"
+msgstr "Görev Bilgileri"
+
+#. module: tasks
+#: model:ir.actions.act_window,name:tasks.task_menu_view
+#: model:ir.model,name:tasks.model_tasks
+msgid "Task Management"
+msgstr "Görev Yönetimi"
+
+#. module: tasks
+#: model:ir.model,name:tasks.model_tasks_report
+#: model:ir.model,name:tasks.model_tasks_status_report
+msgid "Task Report"
+msgstr "Görev Raporları"
+
+#. module: tasks
+#: model:ir.module.category,name:tasks.module_category_tasks
+#: model:ir.ui.menu,name:tasks.task_menu
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_form
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_view_list
+msgid "Tasks"
+msgstr "Görevler"
+
+#. module: tasks
+#: model_terms:ir.ui.view,arch_db:tasks.view_tasks_report_graph
+#: model_terms:ir.ui.view,arch_db:tasks.view_tasks_report_graph12
+#: model_terms:ir.ui.view,arch_db:tasks.view_tasks_report_pivot
+#: model_terms:ir.ui.view,arch_db:tasks.view_tasks_report_pivot12
+msgid "Tasks Analysis"
+msgstr "Görev Analizi"
+
+#. module: tasks
+#: model:res.groups,name:tasks.group_tasks_manager
+msgid "Tasks Manager"
+msgstr "Görev Yönetimi"
+
+#. module: tasks
+#: model:ir.actions.act_window,name:tasks.action_report_tasks_status111
+#: model:ir.ui.menu,name:tasks.menu_report_late_tasks_item2222
+msgid "Tasks Status"
+msgstr "Task Durumu"
+
+#. module: tasks
+#: model:res.groups,name:tasks.group_tasks_user
+msgid "Tasks User"
+msgstr "Görev Sahibi"
+
+#. module: tasks
+#: model:ir.model.fields,field_description:tasks.field_tasks__title
+msgid "Title"
+msgstr "Başlık"
+
+#. module: tasks
+#: selection:tasks,status:0 selection:tasks.report,status:0
+#: selection:tasks.status.report,status:0
+msgid "ToDo"
+msgstr "Yapılacak"
+
+#. module: tasks
+#: model_terms:ir.ui.view,arch_db:tasks.tasks_kanban
+msgid "hours"
+msgstr "saat"

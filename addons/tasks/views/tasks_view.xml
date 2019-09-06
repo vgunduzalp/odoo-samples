@@ -1,0 +1,120 @@
+<odoo>
+<record id="tasks_view_list" model="ir.ui.view">
+       <field name="name">Tasks</field>
+       <field name="model">tasks</field>
+       <field name="arch" type="xml">
+           <tree string="Tasks">
+               <field name="title"/>
+               <field name="start_date"/>
+               <field name="end_date"/>
+               <field name="deadline"/>
+               <field name="assigned_to"/>
+               <field name="effort"/>
+               <field name="status"/>
+           </tree>
+       </field>
+   </record>
+<record id="tasks_form" model="ir.ui.view">
+   <field name="name">Tasks</field>
+   <field name="model">tasks</field>
+   <field name="arch" type="xml">
+       <form string="Tasks">
+           <sheet>
+             <group>
+               <field name="title"/>
+
+               </group>
+               <group>
+                   <group string="Task Info">
+                       <field name="assigned_to"/>
+
+                      <field name="effort"/>
+                       <field name="status"/>
+                   </group>
+
+                   <group string="Date Info">
+
+
+                       <field name="start_date"/>
+                       <field name="end_date"/>
+                       <field name="deadline"/>
+                   </group>
+               </group>
+
+               <group>
+                 <field name="description"/>
+               </group>
+           </sheet>
+       </form>
+
+   </field>
+</record>
+
+    <record id="task_menu_view" model="ir.actions.act_window">
+        <field name="name">Task Management</field>
+        <field name="res_model">tasks</field>
+        <field name="view_mode">kanban,tree,form</field>
+
+        <field name="context">{'search_default_status': 1}</field>
+   </record>
+
+   <menuitem
+       name="Tasks"
+       id="task_menu"
+       sequence="5"
+       action="task_menu_view"/>
+
+
+    <record id="tasks_search" model="ir.ui.view">
+            <field name="model">tasks</field>
+            <field name="arch" type="xml">
+                <search string="Status Actions">
+
+                    <filter string="All" name="all" domain="['|', ('active', '=', False), ('active', '=', True)]" />
+                    <group expand="0" string="Group By">
+                        <filter string="Status" name="status" domain="[]" context="{'group_by':'status'}" />
+
+                    </group>
+                </search>
+            </field>
+        </record>
+
+
+<record id="tasks_kanban" model="ir.ui.view">
+    <field name="name">Tasks</field>
+    <field name="model">tasks</field>
+
+
+
+    <field name="arch" type="xml">
+    <kanban class="o_hr_employee_kanban">
+                <field name="id"/>
+
+                <templates>
+                    <t t-name="kanban-box">
+                    <div class="oe_kanban_global_click o_kanban_record_has_image_fill o_hr_kanban_record" style="margin-bottom:5px;">
+
+                        <div class="o_kanban_image_fill_left d-none d-md-block" t-attf-style="background-image: url(#{kanban_image('hr.employee', 'image_medium', record.assigned_to.raw_value)})" role="img"/>
+
+                        <div class="oe_kanban_details">
+                            <div class="o_kanban_record_top">
+                                <div class="o_kanban_record_headings">
+                                    <strong class="o_kanban_record_title">
+                                        <field name="title"/>
+                                    </strong>
+                                    <span class="o_kanban_record_subtitle"><field name="assigned_to"/></span>
+                                    <span class="o_kanban_record_subtitle">Start: <field name="start_date"/></span>
+                                    <span class="o_kanban_record_subtitle">Deadline: <field name="deadline"/></span>
+
+                                    <span class="o_kanban_record_subtitle">Effort: <field name="effort"/> hours</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </t>
+                </templates>
+            </kanban>
+    </field>
+</record>
+</odoo>
+

@@ -1,0 +1,263 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* certification
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 12.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-06 06:30+0000\n"
+"PO-Revision-Date: 2019-09-05 23:43-0700\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"Language: tr\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#. module: certification
+#: selection:certification,expiry_status:0
+#: selection:certification.report,expiry_status:0
+msgid "Available"
+msgstr "Uygun"
+
+#. module: certification
+#: model:ir.actions.act_window,name:certification.certification
+#: model:ir.model,name:certification.model_certification
+#: model:ir.model.fields,field_description:certification.field_res_partner__certification_ids
+#: model:ir.model.fields,field_description:certification.field_res_partner__is_certification_body
+#: model:ir.model.fields,field_description:certification.field_res_users__certification_ids
+#: model:ir.model.fields,field_description:certification.field_res_users__is_certification_body
+#: model:ir.module.category,name:certification.module_category_certification
+#: model:ir.ui.menu,name:certification.certification_menu
+#: model_terms:ir.ui.view,arch_db:certification.certification_form
+#: model_terms:ir.ui.view,arch_db:certification.certification_view_list
+msgid "Certification"
+msgstr "Belgeler"
+
+#. module: certification
+#: model_terms:ir.ui.view,arch_db:certification.view_certification_report_graph
+#: model_terms:ir.ui.view,arch_db:certification.view_certification_report_pivot
+msgid "Certification Analysis"
+msgstr "Belgelerin Analizi"
+
+#. module: certification
+#: model_terms:ir.ui.view,arch_db:certification.certification_bodies_view_list
+msgid "Certification Bodies"
+msgstr "Belge Sahipleri"
+
+#. module: certification
+#: model:ir.actions.act_window,name:certification.action_certification_bodies
+#: model:ir.ui.menu,name:certification.bodies
+msgid "Certification Bodies 2"
+msgstr ""
+
+#. module: certification
+#: model_terms:ir.ui.view,arch_db:certification.certification_template_pdf
+msgid "Certification Body"
+msgstr ""
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification_report__certification_count
+msgid "Certification Count"
+msgstr "Belge Sayısı"
+
+#. module: certification
+#: model:res.groups,name:certification.group_certification_manager
+msgid "Certification Manager"
+msgstr ""
+
+#. module: certification
+#: model:ir.model,name:certification.model_certification_report
+msgid "Certification Report"
+msgstr "Belge Raporlar"
+
+#. module: certification
+#: model:ir.actions.report,name:certification.report_certification_pdf
+msgid "Certification Report Yazdir"
+msgstr "Belge Raporu Yazir"
+
+#. module: certification
+#: model:ir.model,name:certification.model_certification_standard
+msgid "Certification Types"
+msgstr ""
+
+#. module: certification
+#: model:res.groups,name:certification.group_certification_user
+msgid "Certification User"
+msgstr ""
+
+#. module: certification
+#: model_terms:ir.ui.view,arch_db:certification.view_partner_form
+msgid "Certifications List"
+msgstr ""
+
+#. module: certification
+#: model:ir.model.fields,help:certification.field_res_partner__is_certification_body
+#: model:ir.model.fields,help:certification.field_res_users__is_certification_body
+msgid "Check this box if the contact is a certification entity"
+msgstr ""
+
+#. module: certification
+#: model:ir.model,name:certification.model_res_partner
+msgid "Contact"
+msgstr "İletişim"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__create_uid
+#: model:ir.model.fields,field_description:certification.field_certification_standard__create_uid
+msgid "Created by"
+msgstr "Oluşturan"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__create_date
+#: model:ir.model.fields,field_description:certification.field_certification_standard__create_date
+msgid "Created on"
+msgstr "Oluşturulma"
+
+#. module: certification
+#: model:ir.actions.act_window,name:certification.action_report_certification2
+#: model:ir.actions.act_window,name:certification.action_report_certification3
+#: model:ir.ui.menu,name:certification.menu_report_certification1
+#: model:ir.ui.menu,name:certification.menu_report_certification2
+msgid "Deneme 2"
+msgstr ""
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification_standard__description
+msgid "Description"
+msgstr "Açıklama"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__display_name
+#: model:ir.model.fields,field_description:certification.field_certification_report__display_name
+#: model:ir.model.fields,field_description:certification.field_certification_standard__display_name
+msgid "Display Name"
+msgstr "Görünüm Adı"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__entity_id
+#: model:ir.model.fields,field_description:certification.field_certification_report__entity_id
+msgid "Entity"
+msgstr ""
+
+#. module: certification
+#: selection:certification,expiry_status:0
+#: selection:certification.report,expiry_status:0
+msgid "Expired"
+msgstr "Zaman Aşımı"
+
+#. module: certification
+#: model_terms:ir.ui.view,arch_db:certification.certification_template_pdf
+msgid "Expiry Date"
+msgstr "Zaman Aşımı Tarihi"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__expiry_days
+msgid "Expiry Days"
+msgstr "Zaman Aşımı Gün"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__expiry_status
+#: model:ir.model.fields,field_description:certification.field_certification_report__expiry_status
+msgid "Expiry Status"
+msgstr "Zaman Aşımı Durumu"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__id
+#: model:ir.model.fields,field_description:certification.field_certification_report__id
+#: model:ir.model.fields,field_description:certification.field_certification_standard__id
+msgid "ID"
+msgstr ""
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification____last_update
+#: model:ir.model.fields,field_description:certification.field_certification_report____last_update
+#: model:ir.model.fields,field_description:certification.field_certification_standard____last_update
+msgid "Last Modified on"
+msgstr "Son Güncelleme"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__write_uid
+#: model:ir.model.fields,field_description:certification.field_certification_standard__write_uid
+msgid "Last Updated by"
+msgstr "Son Güncelleyen"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__write_date
+#: model:ir.model.fields,field_description:certification.field_certification_standard__write_date
+msgid "Last Updated on"
+msgstr "Son Güncelleme"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification_standard__name
+msgid "Name"
+msgstr "İsim"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__number
+msgid "Number"
+msgstr "Belge Numarası"
+
+#. module: certification
+#: model_terms:ir.ui.view,arch_db:certification.certification_template_pdf
+msgid "Number Test"
+msgstr ""
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__owner_id
+#: model_terms:ir.ui.view,arch_db:certification.certification_template_pdf
+msgid "Owner"
+msgstr "Sahibi"
+
+#. module: certification
+#: model_terms:ir.ui.view,arch_db:certification.certification_template_pdf
+msgid "Owner Category"
+msgstr ""
+
+#. module: certification
+#: model:ir.actions.act_window,name:certification.action_report_certification
+#: model:ir.ui.menu,name:certification.menu_report_certification
+msgid "Raporlar"
+msgstr "Raporlar"
+
+#. module: certification
+#: model_terms:ir.ui.view,arch_db:certification.certification_template_pdf
+msgid "Sertifika Listesi"
+msgstr "Sertifika Listesi"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__standard_id
+#: model:ir.model.fields,field_description:certification.field_certification_report__standard_id
+#: model_terms:ir.ui.view,arch_db:certification.standard_form
+#: model_terms:ir.ui.view,arch_db:certification.standard_view_list
+msgid "Standard"
+msgstr "Standart"
+
+#. module: certification
+#: model_terms:ir.ui.view,arch_db:certification.certification_template_pdf
+msgid "Standard assd"
+msgstr "Standart"
+
+#. module: certification
+#: model:ir.actions.act_window,name:certification.open_standard
+#: model:ir.ui.menu,name:certification.Standard
+msgid "Standards"
+msgstr "Standartlar"
+
+#. module: certification
+#: model_terms:ir.ui.view,arch_db:certification.certification_form
+msgid "Update the validation date one month"
+msgstr "1 Ay Daha Geçerli Yap"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__date
+msgid "Validation Date"
+msgstr "Geçerlilik Tarihi"
+
+#. module: certification
+#: model:ir.model.fields,field_description:certification.field_certification__description
+msgid "Validation Details"
+msgstr "Geçerlilik Detayları"

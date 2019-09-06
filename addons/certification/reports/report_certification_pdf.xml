@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <report id="report_certification_pdf"
+       name="certification.certification_template_pdf"
+       model="certification"
+       string="Certification Report Yazdir"
+       report_type="qweb-pdf" />
+</odoo>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+   <record id="standard_view_list" model="ir.ui.view">
+       <field name="name">Standards</field>
+       <field name="model">certification.standard</field>
+       <field name="arch" type="xml">
+           <tree string="Standard">
+               <field name="name"/>
+               <field name="description"/>
+           </tree>
+       </field>
+   </record>
+
+   <record id="standard_form" model="ir.ui.view">
+       <field name="name">Standards</field>
+       <field name="model">certification.standard</field>
+       <field name="arch" type="xml">
+           <form string="Standard">
+               <sheet>
+                   <group>
+                       <field name="name"/>
+                       <field name="description"/>
+                   </group>
+               </sheet>
+           </form>
+       </field>
+   </record>
+    <record id="open_standard" model="ir.actions.act_window">
+        <field name="name">Standards</field>
+        <field name="res_model">certification.standard</field>
+        <field name="view_mode">tree,form</field>
+   </record>
+
+   <menuitem
+       id="Standard"
+       parent="certification_menu"
+       sequence="5"
+       action="open_standard"/>
+</odoo>
+
+
+
+
+
+
+
+
+
+
+
